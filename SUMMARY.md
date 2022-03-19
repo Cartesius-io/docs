@@ -6,18 +6,22 @@
 
 ## Reference
 
-* [API](reference/api/README.md)
-  * [Pets](reference/api/pets.md)
-  * [Users](reference/api/users.md)
-* [Geo Feature](reference/geo-feature.md)
+* [API](reference/api.md)
+* [API](reference/api-1/README.md)
+  * [Pets](reference/api-1/pets.md)
+* [Geo feature model](reference/geo-feature-model/README.md)
+  * [Users](reference/geo-feature-model/users.md)
 * [CartesiusQL](reference/cartesiusql.md)
+* [Studio](reference/studio/README.md)
+  * [Analytics](cartesius-studio/analytics.md)
+  * [Geodata](cartesius-studio/geodata-management.md)
 
 ## Integrations
 
 * [JavaScript/TypeScript](integrations/javascript-typescript.md)
 
-## Dashboard
+## Cartesius Studio
 
-* [Analytics](dashboard/analytics.md)
-* [Geo Data Management](dashboard/geo-data-management.md)
-* [Account Management](dashboard/account-management.md)
+* [Analytics](cartesius-studio/analytics.md)
+* [Geodata management](cartesius-studio/geodata-management.md)
+* [Account management](cartesius-studio/account-management.md)
