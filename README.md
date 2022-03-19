@@ -14,16 +14,16 @@ Welcome to Cartesius! Here you'll find all the documentation you need to get up 
 
 Dive a little deeper and start exploring our API and Studio reference to get an idea of everything that's possible with Cartesius:
 
-{% content-ref url="reference/api-1/" %}
-[api-1](reference/api-1/)
+{% content-ref url="reference/api.md" %}
+[api.md](reference/api.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="reference/geo-feature-model/" %}
-[geo-feature-model](reference/geo-feature-model/)
+{% content-ref url="reference/geo-feature-model.md" %}
+[geo-feature-model.md](reference/geo-feature-model.md)
 {% endcontent-ref %}
 
 {% content-ref url="reference/cartesiusql.md" %}

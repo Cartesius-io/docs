@@ -7,14 +7,12 @@
 ## Reference
 
 * [API](reference/api.md)
-* [API](reference/api-1/README.md)
-  * [Pets](reference/api-1/pets.md)
-* [Geo feature model](reference/geo-feature-model/README.md)
-  * [Users](reference/geo-feature-model/users.md)
+* [Geo feature model](reference/geo-feature-model.md)
 * [CartesiusQL](reference/cartesiusql.md)
 * [Studio](reference/studio/README.md)
   * [Analytics](cartesius-studio/analytics.md)
   * [Geodata](cartesius-studio/geodata-management.md)
+  * [Account](cartesius-studio/account-management.md)
 
 ## Integrations
 
