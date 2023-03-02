@@ -1,7 +1,7 @@
 ---
 description: >-
   With over 50+ available properties on Geo features, Cartesius delivers
-  high-quality Geo data.
+  high-quality Geo data for various use cases.
 ---
 
 # Geo feature model

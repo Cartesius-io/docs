@@ -14,8 +14,8 @@ Welcome to Cartesius! Here you'll find all the documentation you need to get up 
 
 Dive a little deeper and start exploring our API and Studio reference to get an idea of everything that's possible with Cartesius:
 
-{% content-ref url="reference/api.md" %}
-[api.md](reference/api.md)
+{% content-ref url="reference/api/" %}
+[api](reference/api/)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
