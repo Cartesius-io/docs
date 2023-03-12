@@ -1,5 +1,12 @@
+---
+description: Convert Coordinates into Geo-Features
+---
+
 # Reverse Geocoding
 
-{% swagger src="../../.gitbook/assets/swagger-spec.json" path="/reverse" method="get" %}
-[swagger-spec.json](../../.gitbook/assets/swagger-spec.json)
-{% endswagger %}
+Coming soon!
+
+{% hint style="info" %}
+If you prefer OpenAPI/Swagger Documentations, click [here](https://api.cartesius.io/beta/openapi#/default/ForwardController\_forwardRequest).
+{% endhint %}
+

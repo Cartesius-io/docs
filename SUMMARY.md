@@ -13,17 +13,12 @@
   * [Form Autocomplete](reference/api/form-autocomplete.md)
   * [Address Parsing](reference/api/address-parsing.md)
   * [Address Validation](reference/api/address-validation.md)
-* [Geo feature model](reference/geo-feature-model.md)
-* [CartesiusQL](reference/cartesiusql.md)
-* [Studio](reference/studio/README.md)
-  * [Geodata](cartesius-studio/geodata-management.md)
-  * [Account](cartesius-studio/account-management.md)
+* [Geo-Feature model](reference/geo-feature-model.md)
+* [Status Page](https://cartesius.instatus.com/)
 
 ## Integrations
 
 * [JavaScript/TypeScript](integrations/javascript-typescript.md)
-* [Go](integrations/go.md)
-* [Angular](integrations/angular.md)
 
 ## Cartesius Studio
 
