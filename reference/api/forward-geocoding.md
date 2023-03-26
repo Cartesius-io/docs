@@ -16,15 +16,36 @@ The query string you provide can contain incomplete and incorrect addresses or f
 
 **Minimum**
 
-```url
+{% tabs %}
+{% tab title="HTTP" %}
+```uri
 https://api.cartesius.io/beta/forward?
     apiKey=<YOUR_API_KEY>&   
     q=Platz d. Deutschen Einheit 4, 20457 HH
 ```
+{% endtab %}
+
+{% tab title="Node/Browser" %}
+<pre class="language-typescript"><code class="lang-typescript">import { CartesiusClient } from "@cartesius/sdk"
+
+<strong>const client = new CartesiusClient({
+</strong>  apiKey: '&#x3C;YOUR-API-KEY>',
+});
+
+const result = await client.forward("Platz d. Deutschen Einheit 4, 20457 HH");
+</code></pre>
+{% endtab %}
+
+{% tab title="Go" %}
+Coming soon!
+{% endtab %}
+{% endtabs %}
 
 **With Filters (Bounding Box, Languages, Categories)**
 
-```url
+{% tabs %}
+{% tab title="HTTP" %}
+```uri
 https://api.cartesius.io/beta/forward?
     apiKey=<YOUR_API_KEY>&   
     languages=de,en,es& 
@@ -32,6 +53,42 @@ https://api.cartesius.io/beta/forward?
     bbox=9.65,53.38,10.33,53.75&
     q=Platz d. Deutschen Einheit 4, 20457 HH
 ```
+{% endtab %}
+
+{% tab title="Node/Browser" %}
+<pre class="language-typescript"><code class="lang-typescript">import { CartesiusClient } from "@cartesius/sdk"
+
+<strong>const client = new CartesiusClient({
+</strong>  apiKey: '&#x3C;YOUR-API-KEY>',
+});
+
+const result = await client.forward("Platz d. Deutschen Einheit 4, 20457 HH",
+<strong>{
+</strong>  languages: ["deu", "en", "es"], // ISO 3166 ALPHA-2 or ALPHA-3
+  fields: ["shape", "displayValue", "category"], // fields to return
+  categories: [{
+    type: 'amenity',
+    specfication: 'shop'
+  }, {
+    type: "highway"
+  }],
+  bbox: {
+    left: 9.65,
+    bottom: 53.38,
+    right:10.33,53.75
+    top: 53.75
+  },
+  filter: {
+    internetAccess: true
+  }
+});
+</code></pre>
+{% endtab %}
+
+{% tab title="Go" %}
+Coming soon!
+{% endtab %}
+{% endtabs %}
 
 ### Results
 
