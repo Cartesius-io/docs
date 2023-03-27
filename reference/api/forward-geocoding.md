@@ -10,7 +10,9 @@ Forward Geocoding allows you to convert addresses and place names into Geo-Featu
 If you prefer OpenAPI/Swagger Documentations, click [here](https://api.cartesius.io/beta/openapi#/default/ForwardController\_forwardRequest).
 {% endhint %}
 
-The query string you provide can contain incomplete and incorrect addresses or full addresses in any order. It is also possible to pass natural text, such as parts of a conversation that contains geographical references, as we [parse](address-parsing.md) important address components out of the given string. Forward Geocoding should not be used for prefix search, such as search-as-you-type or autocomplete. Please take a look at the [Autocomplete API](autocomplete.md) that covers this exact use-case.
+The query string you provide can contain incomplete and incorrect addresses or full addresses in any order. It is also possible to pass natural text, such as parts of a conversation that contains geographical references, as we [parse](address-parsing.md) important address components out of the given string. Furthermore, you can search in any language available (up to 200+).&#x20;
+
+Forward Geocoding should not be used for prefix search, such as search-as-you-type or autocomplete. Please take a look at the [Autocomplete API](autocomplete.md) that covers this exact use-case.
 
 ### Examples
 
@@ -18,11 +20,11 @@ The query string you provide can contain incomplete and incorrect addresses or f
 
 {% tabs %}
 {% tab title="HTTP" %}
+{% code overflow="wrap" %}
 ```uri
-https://api.cartesius.io/beta/forward?
-    apiKey=<YOUR_API_KEY>&   
-    q=Platz d. Deutschen Einheit 4, 20457 HH
+https://api.cartesius.io/beta/forward?apiKey=<YOUR_API_KEY>&q=Platz d. Deutschen Einheit 4, 20457 HH
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Node/Browser" %}
@@ -45,14 +47,11 @@ Coming soon!
 
 {% tabs %}
 {% tab title="HTTP" %}
+{% code overflow="wrap" %}
 ```uri
-https://api.cartesius.io/beta/forward?
-    apiKey=<YOUR_API_KEY>&   
-    languages=de,en,es& 
-    categories=amenity:theatre,highway&
-    bbox=9.65,53.38,10.33,53.75&
-    q=Platz d. Deutschen Einheit 4, 20457 HH
+https://api.cartesius.io/beta/forward?apiKey=<YOUR_API_KEY>&languages=de,en,es& categories=amenity:restaurant,highway&bbox=9.65,53.38,10.33,53.75&q=Platz d. Deutschen Einheit 4, 20457 HH
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Node/Browser" %}
@@ -68,7 +67,7 @@ const result = await client.forward("Platz d. Deutschen Einheit 4, 20457 HH",
   fields: ["shape", "displayValue", "category"], // fields to return
   categories: [{
     type: 'amenity',
-    specfication: 'shop'
+    specfication: 'restaurant'
   }, {
     type: "highway"
   }],
@@ -98,6 +97,6 @@ The result will be a list of valid [GeoJSON Features](https://geojson.org/) [(RF
 
 ### Endpoint Documentation
 
-{% swagger src="../../.gitbook/assets/swagger-spec.json" path="/forward" method="get" %}
-[swagger-spec.json](../../.gitbook/assets/swagger-spec.json)
+{% swagger src="https://api.cartesius.io/beta/openapi-json" path="/forward" method="get" %}
+[https://api.cartesius.io/beta/openapi-json](https://api.cartesius.io/beta/openapi-json)
 {% endswagger %}

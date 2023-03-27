@@ -18,6 +18,9 @@
 
 ## Integrations
 
+* [Web Components](integrations/web-components.md)
+* [React](integrations/react.md)
+* [Angular](integrations/angular.md)
 * [JavaScript/TypeScript](integrations/javascript-typescript.md)
 
 ## Cartesius Studio
