@@ -49,7 +49,7 @@ Coming soon!
 {% tab title="HTTP" %}
 {% code overflow="wrap" %}
 ```uri
-https://api.cartesius.io/beta/forward?apiKey=<YOUR_API_KEY>&languages=de,en,es& categories=amenity:restaurant,highway&bbox=9.65,53.38,10.33,53.75&q=Platz d. Deutschen Einheit 4, 20457 HH
+https://api.cartesius.io/beta/autocomplete?apiKey=<YOUR_API_KEY>&languages=de,en,es& categories=amenity:restaurant,highway&bbox=9.65,53.38,10.33,53.75&q=Elbphil
 ```
 {% endcode %}
 {% endtab %}
@@ -61,7 +61,7 @@ https://api.cartesius.io/beta/forward?apiKey=<YOUR_API_KEY>&languages=de,en,es& 
 </strong>  apiKey: '&#x3C;YOUR-API-KEY>',
 });
 
-const result = await client.forward("Platz d. Deutschen Einheit 4, 20457 HH",
+const result = await client.autocomplete("Elbphil",
 <strong>{
 </strong>  languages: ["deu", "en", "es"], // ISO 3166 ALPHA-2 or ALPHA-3
   fields: ["shape", "displayValue", "category"], // fields to return
